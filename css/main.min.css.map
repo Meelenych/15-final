@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,AAAC,CACF,OAAO,CAAE,IAAI,CACb,KAAK,CAAE,SAAS,CAChB,SAAS,CAAE,EAAE,CACb,WAAW,CAAE,GAAG,CACnB",
+    "sources": [
+        "../src/sass/main.scss",
+        "../src/sass/_header.scss",
+        "../src/sass/_about.scss",
+        "../src/sass/_hero.scss",
+        "../src/sass/_product.scss",
+        "../src/sass/_reviews.scss",
+        "../src/sass/_footer.scss",
+        "../src/sass/_contacts.scss",
+        "../src/sass/_registration.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
