@@ -1,6 +1,23 @@
-.team {
-    padding: 50px; 
-    color: slateblue; 
-    font-size: 50;
-    font-weight: 900;
-} 
+.header {
+  background-color: $background_header-color;
+}
+.hero__text-white {
+  font-family: $main-font-family;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $background-color;
+}
+.hero__text-red {
+  font-size: 38px;
+  font-family: $main-font-family;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $brand-color;
+}
+.hero__button-1 {
+  background: #d41443;
+  border-radius: 20px;
+}
