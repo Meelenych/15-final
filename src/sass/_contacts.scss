@@ -1,6 +1,8 @@
 .contacts__section {
   padding-top: 85px;
   padding-bottom: 110px;
+
+  background: linear-gradient(0deg, #fff5f6 0%, #fff5f6 71.42%, #feffff 71.43%, #ffffff 104.18%);
 }
 
 .contacts__item {
@@ -107,6 +109,7 @@
     margin-bottom: 10px;
   }
 }
+
 .contacts__link {
   font-family: DM Sans;
 
@@ -116,13 +119,18 @@
 
   color: $discription_text-color;
 }
+.contacts__buttons {
+  margin-top: 54px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .contacts__btn {
   background: #ffffff;
   border-radius: 22px;
   width: 161px;
   height: 44px;
   border: none;
-  padding: 0px 31px;
+  text-align: center;
   font-family: DM Sans;
   font-weight: bold;
   font-size: 16px;
@@ -131,11 +139,16 @@
   color: $brand-color;
 
   &--current {
-    padding: 0px 17px;
-    background: #d41342;
+    background: $brand-color;
     color: #ffffff;
   }
 }
 .contacts__svg {
-  border: 2px solid #ffffff;
+  width: 3.61px;
+  height: 8px;
+  fill: #ffffff;
+
+  &--current {
+    fill: $brand-color;
+  }
 }
