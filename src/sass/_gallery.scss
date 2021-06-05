@@ -13,19 +13,19 @@
   background-size: cover;
 }
 
-@media (min-width: 767px) {
-  .gallery {
-    max-width: 768px;
-    background-image: url('../images/home-pic5-tablet.png');
-  }
-}
+// @media (min-width: 767px) {
+//   .gallery {
+//     max-width: 768px;
+//     background-image: url('../images/home-pic5-tablet.png');
+//   }
+// }
 
-@media (min-width: 1199px) {
-  .gallery {
-    max-width: 1280px;
-    max-height: 430px;
-    padding-top: 140px;
-    padding-bottom: 120px;
-    background-image: url('../images/home-pic5-desktop.png');
-  }
-}
+// @media (min-width: 1199px) {
+//   .gallery {
+//     max-width: 1280px;
+//     max-height: 430px;
+//     padding-top: 140px;
+//     padding-bottom: 120px;
+//     background-image: url('../images/home-pic5-desktop.png');
+//   }
+// }
