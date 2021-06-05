@@ -1,3 +1,8 @@
+.contacts__section {
+  padding-top: 85px;
+  padding-bottom: 110px;
+}
+
 .contacts__item {
   width: 220px;
   height: 427px;
@@ -11,10 +16,10 @@
     margin-bottom: 20px;
   }
 }
-// .contacts__list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .contacts__title {
   font-family: DM Sans;
@@ -110,26 +115,4 @@
   line-height: 1.5;
 
   color: $discription_text-color;
-}
-
-//Базовые стили
-p {
-  margin: 0;
-}
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-.container {
-  padding: 0px 50px;
 }
