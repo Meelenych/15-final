@@ -1,6 +1,6 @@
 <section class="contacts__section">
   <div class="container">
-    <h2 class="is-hidden">Our Locations</h2>
+    <h2 class="visually-hidden">Our Locations</h2>
     <ul class="contacts__list">
       <li class="contacts__item">
         <h4 class="contacts__title cafe">CAFE</h4>
@@ -54,9 +54,19 @@
         </div>
       </li>
     </ul>
-    <div class="contacts__btn">
-      <button class="contacts__btn--current">Our Locations</button>
-      <button class="contacts__btn">Franchise</button>
+    <div class="contacts__buttons">
+      <button class="contacts__btn contacts__btn--current">
+        Our Locations
+        <svg class="contacts__svg contacts__svg--current">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <button class="contacts__btn">
+        Franchise
+        <svg>
+          <use class="contacts__svg" href="./images/symbol-defs.svg#icon-contacts-btn"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>

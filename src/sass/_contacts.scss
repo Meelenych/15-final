@@ -16,10 +16,10 @@
     margin-bottom: 20px;
   }
 }
-.contacts__list {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .contacts__list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 .contacts__title {
   font-family: DM Sans;
@@ -115,4 +115,27 @@
   line-height: 1.5;
 
   color: $discription_text-color;
+}
+.contacts__btn {
+  background: #ffffff;
+  border-radius: 22px;
+  width: 161px;
+  height: 44px;
+  border: none;
+  padding: 0px 31px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: $brand-color;
+
+  &--current {
+    padding: 0px 17px;
+    background: #d41342;
+    color: #ffffff;
+  }
+}
+.contacts__svg {
+  border: 2px solid #ffffff;
 }
