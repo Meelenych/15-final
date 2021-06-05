@@ -3,9 +3,11 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-
+@import './styles';
+@import './variables';
+@import './base/common';
 @import './variables_colors';
+
 @import './header';
 @import './products';
 @import './about';

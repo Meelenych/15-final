@@ -1,0 +1,108 @@
+.header {
+  background-color: $background_header-color;
+}
+
+.header__logo {
+  @extend .link;
+}
+
+.header__mobile-menu__button {
+  width: 20px;
+  height: 12px;
+}
+
+.hero__text-white {
+  font-family: $main-font-family;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $background-color;
+}
+.hero__text-red {
+  font-size: 38px;
+  font-family: $main-font-family;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $brand-color;
+}
+
+.hero__list {
+  @extend .list;
+}
+
+.hero__link-1 {
+  @extend .link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $secondary-font-family;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $background-color;
+  background: $brand-color;
+  border-radius: 20px;
+  width: 63px;
+  height: 24px;
+}
+.hero__link-2 {
+  @extend .link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $secondary-font-family;
+  font-size: 8px;
+  line-height: 1.25;
+  color: $brand-color;
+  background: $background-color;
+  border-radius: 20px;
+  width: 83px;
+  height: 24px;
+}
+
+.mobile-menu {
+  background-color: $mobile-menu-color;
+}
+
+.mobile-menu__btn-close {
+  width: 14px;
+  height: 14px;
+}
+
+.mobile-menu__btn-buy {
+  width: 209px;
+  height: 44px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: none;
+
+  font-family: $secondary-font-family;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $brand-color;
+}
+
+.nav__list {
+  @extend .list;
+}
+
+.nav__item {
+  @extend .link;
+  font-family: $secondary-font-family;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $background-color;
+}
+
+.nav__item--red {
+  @extend .link;
+  font-family: $secondary-font-family;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $brand-color;
+}
+
