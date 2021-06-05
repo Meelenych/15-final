@@ -5,11 +5,27 @@
 
 // Стили для файла с примером HTML-фрагмента
 
+
+
+
+
+
+
+
+
+
+
+
+@import './styles';
+@import './variables';
+@import './base/common';
+@import './variables_colors';
 @import './header';
+@import './products';
 @import './about';
-@import './hero';
 @import './product';
+@import './advantages';
+@import './gallery';
 @import './reviews';
-@import './footer';
 @import './contacts';
-@import './registration';
+@import './footer';
