@@ -7,7 +7,7 @@
 
 .products {
   background-color: $background-color;
-  padding: 45px 0;
+  padding: 100px 0;
 }
 
 .products__title--main {
@@ -24,7 +24,6 @@
 
 .products__title--base {
   display: block;
-  padding-top: 15px;
   font-family: $main-font-family;
   font-size: 34px;
   line-height: 1.14;
@@ -71,7 +70,9 @@
   height: 40px;
   border: none;
   border-radius: 50%;
-  background: url(../images/mobile/arrow_right1_mobile.png);
+  background-color: #fff;
+  cursor: pointer;
+  // background: url(../images/mobile/arrow_right1_mobile.png);
 }
 
 .products__img {
