@@ -40,6 +40,10 @@
   }
 }
 
+.advantages__image {
+  margin-bottom: 16px;
+}
+
 .advantages__title {
   display: flex;
   justify-content: flex-start;
@@ -48,6 +52,7 @@
   margin-bottom: 20px;
 
   color: $brand-color;
+  font-family: $main-font-family;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.14;
@@ -60,6 +65,7 @@
   margin-bottom: 0px;
 
   color: $main_text-color;
+  font-family: $secondary-font-family;
   text-align: left;
   font-weight: bold;
   font-size: 12px;
