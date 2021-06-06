@@ -1,6 +1,8 @@
 .contacts__section {
   padding-top: 85px;
   padding-bottom: 110px;
+
+  background: linear-gradient(0deg, #fff5f6 0%, #fff5f6 71.42%, #feffff 71.43%, #ffffff 104.18%);
 }
 
 .contacts__item {
@@ -16,10 +18,10 @@
     margin-bottom: 20px;
   }
 }
-.contacts__list {
-  display: flex;
-  flex-wrap: wrap;
-}
+// .contacts__list {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 .contacts__title {
   font-family: DM Sans;
@@ -107,6 +109,7 @@
     margin-bottom: 10px;
   }
 }
+
 .contacts__link {
   font-family: DM Sans;
 
@@ -115,4 +118,39 @@
   line-height: 1.5;
 
   color: $discription_text-color;
+}
+.contacts__buttons {
+  margin-top: 54px;
+  // margin-right: auto;
+  // margin-left: auto;
+
+  text-align: center;
+}
+.contacts__btn {
+  background: #ffffff;
+  border-radius: 22px;
+  width: 161px;
+  height: 44px;
+  border: none;
+  text-align: center;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 0;
+  color: $brand-color;
+
+  &--current {
+    background: $brand-color;
+    color: #ffffff;
+  }
+}
+.contacts__svg {
+  width: 3.61px;
+  height: 8px;
+  fill: #ffffff;
+
+  &--current {
+    fill: $brand-color;
+  }
 }
