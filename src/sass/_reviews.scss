@@ -28,7 +28,10 @@
     position: absolute;
     z-index: 1;
     top: 170px;
-    left: 60px;
+    left: 50%;
+    transform: translate(-140%, 0%);
+    
+
 }
 
 .review__line-1 {
