@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .products {
@@ -17,6 +16,7 @@
   font-size: 18px;
   line-height: 1.16;
   padding-bottom: 15px;
+  margin: 0;
   text-align: center;
   text-transform: uppercase;
   color: $text-color;
@@ -25,7 +25,6 @@
 .products__title--base {
   display: block;
   padding-top: 15px;
-  padding-bottom: 30px;
   font-family: $main-font-family;
   font-size: 34px;
   line-height: 1.14;
@@ -33,57 +32,91 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $brand-color;
-
 }
 
 .products__title {
   font-family: $main-font-family;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
+  margin: 0;
+  // text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $background-color;
 }
 
+.flex-container > div {
+  height: 485px;
+  padding: 160px 20px 30px 20px;
+  margin-top: 130px;
+}
+
 .products__text {
-  width: 200px;
+  max-width: 200px;
+  font-size: 14px;
   font-family: $secondary-font-family;
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
+  margin: 0;
+  padding-bottom: 30px;
   color: $background-color;
- }
+}
 
- .products__button {
+.products__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: url(../images/mobile/arrow_right1_mobile.png);
+}
+
+.products__img {
+  margin: 0 auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: -23%;
+  left: 6%;
+}
 
-  }
+.products__group {
+  padding: 30px 0;
+}
 
- .strawberry {
+.strawberry {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   max-width: 280px;
+  height: 100%;
+  max-height: 485px;
   background: $background_header-color;
   border-radius: 24px;
- }
+}
 
- .chocolate {
-   position: relative;
+.chocolate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 280px;
   background: $cafe-color;
   border-radius: 24px;
- }
+}
 
- .kiwi {
-   position: relative;
+.kiwi {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  max-width: 280px;
   background: $foodtruck-color;
   border-radius: 24px;
- }
-
-.container {
-  width: 100%;
-  padding: 0 15px;
 }
