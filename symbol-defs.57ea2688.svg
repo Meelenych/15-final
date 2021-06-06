@@ -45,7 +45,7 @@
 <path d="M1 14.7407L15 1.25924" stroke="white"/>
 </symbol>
 
-<symbol id="close" viewBox="0 0 8 10">
+<symbol id="vector" viewBox="0 0 8 10">
 <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
