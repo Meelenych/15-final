@@ -152,14 +152,21 @@
   height: 30px;
   cursor: pointer;
   background: $mobile-menu-color;
-  border: solid 1px green;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 .mobile-menu__btn-close__icon {
   width: 14px;
   height: 14px;
   fill: $background-color;
-  border: solid 1px green;
+}
+
+.mobile-menu__btn-close--geometry {
+  display: flex;
+  flex-direction: row-reverse;
+  // margin-top: 15px;
 }
 
 .mobile-menu__btn-buy {
@@ -168,19 +175,32 @@
   border-radius: 22px;
   background: #ffffff;
   border: none;
+  margin: auto;
+  margin-bottom: 20px;
 
   font-family: $secondary-font-family;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
   color: $brand-color;
+  padding-left: 50px;
 
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
 
   &:hover,
   &:focus {
     background: $background-color-hover;
   }
+}
+
+.btn-buy__icon {
+  display: block;
+  width: 5px;
+  height: 8px;
+  margin-left: 20px;
 }
 
 .nav__list {
@@ -194,6 +214,11 @@
   font-size: 14px;
   line-height: 1.29;
   color: $background-color;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 21px;
 
   &:hover,
   &:focus {
