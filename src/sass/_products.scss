@@ -25,6 +25,7 @@
 .products__title--base {
   display: block;
   padding-top: 15px;
+  padding-bottom: 30px;
   font-family: $main-font-family;
   font-size: 34px;
   line-height: 1.14;
@@ -38,12 +39,15 @@
   font-family: $main-font-family;
   font-size: 20px;
   line-height: 1.15;
+
   margin: 0;
   // text-align: center;
+  text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $background-color;
 }
+
 
 .flex-container > div {
   height: 485px;
@@ -120,3 +124,46 @@
   background: $foodtruck-color;
   border-radius: 24px;
 }
+=======
+.products__text {
+  width: 200px;
+  font-family: $secondary-font-family;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $background-color;
+ }
+
+ .products__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  }
+
+ .strawberry {
+  position: relative;
+  max-width: 280px;
+  background: $background_header-color;
+  border-radius: 24px;
+ }
+
+ .chocolate {
+   position: relative;
+  background: $cafe-color;
+  border-radius: 24px;
+ }
+
+ .kiwi {
+   position: relative;
+  background: $foodtruck-color;
+  border-radius: 24px;
+ }
+
+// .container {
+//   width: 100%;
+//   padding: 0 15px;
+// }
+
