@@ -116,15 +116,21 @@ font-family: $secondary-font-family;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
-line-height: 255%;
+line-height: 2.55;
 z-index: 2;
-
-/* or 31px */
-
 text-align: center;
 width: 157px;
 
 }
+
+.review__names {
+    font-family: $secondary-font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;   
+    text-align: center;
+}
+
 
 .read-more {
     width: 162px;
@@ -168,5 +174,8 @@ width: 157px;
     &:hover, :focus {
         fill: $brand-color-hover;
     }
+}
 
+.current {
+    fill: $brand-color-hover;
 }
