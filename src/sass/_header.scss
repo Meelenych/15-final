@@ -1,14 +1,75 @@
 .header {
   background-color: $background_header-color;
+  padding-top: 6px;
+  min-width: 320px;
+  border: solid 1px green;
 }
 
 .header__logo {
   @extend .link;
+  width: 200px;
+  border: solid 1px green;
 }
 
 .header__mobile-menu__button {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  border: solid 1px green;
+  background-color: $background_header-color;
+}
+
+.header__logo--geometry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px green;
+}
+
+.header__mobile-menu__button__icon {
   width: 20px;
   height: 12px;
+  fill: $brand-color;
+  border: solid 1px green;
+}
+
+.hero__background {
+  background-color: $text-color;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  position: absolute;
+  left: 36px;
+  top: 83px;
+}
+
+.hero__background-image {
+  background: url(../images/mobile/header_img1_mobile.png);
+  position: absolute;
+  width: 171px;
+  height: 410px;
+  background-repeat: no-repeat;
+  left: 117px;
+  top: 92px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.hero--geometry {
+  padding-top: 137px;
+  margin-bottom: 19px;
+  position: relative;
+  overflow: hidden;
+  border: solid 1px green;
 }
 
 .hero__text-white {
@@ -18,18 +79,31 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $background-color;
+  margin: 0;
+  border: solid 1px green;
 }
 .hero__text-red {
-  font-size: 38px;
+  font-size: 47px;
   font-family: $main-font-family;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $brand-color;
+  margin: 0;
+  border: solid 1px green;
 }
 
 .hero__list {
   @extend .list;
+  display: flex;
+  padding: 0;
+  padding-bottom: 140px;
+  position: relative;
+  border: solid 1px green;
+}
+
+.hero__item {
+  padding-right: 8px;
 }
 
 .hero__link-1 {
@@ -45,6 +119,11 @@
   border-radius: 20px;
   width: 63px;
   height: 24px;
+
+  &:hover,
+  &:focus {
+    background: $brand-color-hover;
+  }
 }
 .hero__link-2 {
   @extend .link;
@@ -59,6 +138,11 @@
   border-radius: 20px;
   width: 83px;
   height: 24px;
+
+  &:hover,
+  &:focus {
+    background: $background-color-hover;
+  }
 }
 
 .mobile-menu {
@@ -66,8 +150,18 @@
 }
 
 .mobile-menu__btn-close {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  background: $mobile-menu-color;
+  border: solid 1px green;
+}
+
+.mobile-menu__btn-close__icon {
   width: 14px;
   height: 14px;
+  fill: $background-color;
+  border: solid 1px green;
 }
 
 .mobile-menu__btn-buy {
@@ -82,6 +176,13 @@
   font-size: 16px;
   line-height: 1.31;
   color: $brand-color;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background: $background-color-hover;
+  }
 }
 
 .nav__list {
@@ -95,14 +196,9 @@
   font-size: 14px;
   line-height: 1.29;
   color: $background-color;
-}
 
-.nav__item--red {
-  @extend .link;
-  font-family: $secondary-font-family;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.29;
-  color: $brand-color;
+  &:hover,
+  &:focus {
+    color: $brand-color-hover;
+  }
 }
-
