@@ -1,0 +1,25 @@
+.about__label {
+  font-family: $main-font-family;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.about__title {
+  font-family: $main-font-family;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $brand-color;
+}
+
+.about__icone {
+  width: 4.5px;
+  height: 8px;
+  stroke: $brand-color;
+  fill: none;
+}
