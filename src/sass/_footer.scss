@@ -3,22 +3,19 @@
   background-color: $background_main-color;
 }
 
-.footer__tittel {
+.footer__titel {
   font-family: $main-font-family;
   color: $text-color;
-
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
 }
 
-.footer__tittel--red {
-  font-family: $main-font-family;
+.footer__titel--red {
   color: $brand-color;
   font-size: 34px;
   line-height: 1.14;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 .social-media__link {
@@ -49,7 +46,7 @@
   color: $main_text-color;
   font-style: normal;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.02em;
@@ -62,7 +59,7 @@
 .footer__copyright {
   font-family: $secondary-font-family;
   color: $discription_text-color;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
