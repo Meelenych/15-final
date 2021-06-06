@@ -2,35 +2,31 @@
   background-color: $background_header-color;
   padding-top: 6px;
   min-width: 320px;
-  border: solid 1px green;
 }
 
 .header__logo {
   @extend .link;
   width: 200px;
-  border: solid 1px green;
 }
 
 .header__mobile-menu__button {
   width: 40px;
   height: 30px;
   cursor: pointer;
-  border: solid 1px green;
   background-color: $background_header-color;
+  border: none;
 }
 
 .header__logo--geometry {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px green;
 }
 
 .header__mobile-menu__button__icon {
   width: 20px;
   height: 12px;
   fill: $brand-color;
-  border: solid 1px green;
 }
 
 .hero__background {
@@ -48,7 +44,7 @@
   width: 171px;
   height: 410px;
   background-repeat: no-repeat;
-  transform: translate(117px, 82px);
+  transform: translate(117px, 75px);
 }
 
 .visually-hidden {
@@ -67,7 +63,6 @@
   margin-bottom: 19px;
   position: relative;
   overflow: hidden;
-  border: solid 1px green;
 }
 
 .hero__text-white {
@@ -78,7 +73,6 @@
   text-transform: uppercase;
   color: $background-color;
   margin: 0;
-  border: solid 1px green;
 }
 .hero__text-red {
   font-size: 47px;
@@ -88,7 +82,6 @@
   text-transform: uppercase;
   color: $brand-color;
   margin: 0;
-  border: solid 1px green;
 }
 
 .hero__list {
@@ -97,7 +90,6 @@
   padding: 0;
   padding-bottom: 140px;
   position: relative;
-  border: solid 1px green;
 }
 
 .hero__item {
@@ -152,14 +144,21 @@
   height: 30px;
   cursor: pointer;
   background: $mobile-menu-color;
-  border: solid 1px green;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 .mobile-menu__btn-close__icon {
   width: 14px;
   height: 14px;
   fill: $background-color;
-  border: solid 1px green;
+}
+
+.mobile-menu__btn-close--geometry {
+  display: flex;
+  flex-direction: row-reverse;
+  // margin-top: 15px;
 }
 
 .mobile-menu__btn-buy {
@@ -168,19 +167,34 @@
   border-radius: 22px;
   background: #ffffff;
   border: none;
+  margin: auto;
+  margin-bottom: 20px;
 
   font-family: $secondary-font-family;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
   color: $brand-color;
+  padding-left: 50px;
 
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
 
   &:hover,
   &:focus {
     background: $background-color-hover;
   }
+}
+
+.btn-buy__icon {
+  display: block;
+  width: 8px;
+  height: 10px;
+  margin-left: 20px;
+  fill: none;
+  stroke: $brand-color;
 }
 
 .nav__list {
@@ -194,6 +208,11 @@
   font-size: 14px;
   line-height: 1.29;
   color: $background-color;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 21px;
 
   &:hover,
   &:focus {
