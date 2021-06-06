@@ -9,9 +9,11 @@
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
+
+  margin-bottom: 17px;
 }
 
-.footer__titel--red {
+.footer__title--red {
   color: $brand-color;
   font-size: 34px;
   line-height: 1.14;
@@ -47,9 +49,8 @@
   font-style: normal;
   text-decoration: none;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.86;
 }
 
 .address__link {
@@ -61,6 +62,41 @@
   color: $discription_text-color;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
+  line-height: 1.52;
+
+  text-align: center;
+}
+
+.footer__name-block {
+  // padding-right: 66px;
+  padding-left: 5px;
+  max-width: 232px;
+  margin-bottom: 43px;
+}
+
+.social-media__list {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+  padding-right: 5px;
+}
+
+.social-media__item:not(:last-child) {
+  margin-right: 28.24px;
+}
+
+.footer__address {
+  text-align: end;
+  margin-bottom: 43px;
+}
+
+.footer__copyright-block {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: 1px solid #e1e1e1;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
