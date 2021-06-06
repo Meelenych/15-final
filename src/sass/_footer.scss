@@ -49,9 +49,8 @@
   font-style: normal;
   text-decoration: none;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.86;
 }
 
 .address__link {
@@ -63,8 +62,8 @@
   color: $discription_text-color;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
+  line-height: 1.52;
+
   text-align: center;
 }
 
@@ -92,7 +91,10 @@
 }
 
 .footer__copyright-block {
-  padding: 25px 79px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 70px;
+  padding-right: 70px;
   border: 1px solid #e1e1e1;
   border-bottom: none;
   border-left: none;
