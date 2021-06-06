@@ -140,9 +140,9 @@ width: 157px;
 
     &:hover, :focus {
         fill: $brand-color-hover;
-        border-color: $brand-color-hover;
-        border-style: solid;
-        border-width: 2px;
+        // border-color: $brand-color-hover;
+        // border-style: solid;
+        // border-width: 2px;
     }
 }
 
@@ -151,7 +151,6 @@ width: 157px;
     &:not(:last-child) {
         margin-right: 10px;        
     }
-    // 
 }
 
 
