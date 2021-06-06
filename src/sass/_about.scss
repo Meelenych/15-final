@@ -1,4 +1,11 @@
+.about {
+  padding-top: 125px;
+  background-color: $background_main-color;
+}
+
 .about__label {
+  display: block;
+  margin-bottom: 15px;
   font-family: $main-font-family;
   font-size: 18px;
   line-height: 1.17;
@@ -8,6 +15,7 @@
 }
 
 .about__title {
+  margin-bottom: 26px;
   font-family: $main-font-family;
   font-size: 34px;
   line-height: 1.15;
@@ -17,9 +25,46 @@
   color: $brand-color;
 }
 
+.about__description {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about__text {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+
+  &--black {
+    padding: 40px 0;
+    color: $main_text-color;
+  }
+
+  &--gray {
+    padding-bottom: 20px;
+    color: $discription_text-color;
+  }
+}
+
+.about__button {
+  background: $background-color;
+  border-radius: 22px;
+  border: none;
+  width: 176px;
+  height: 44px;
+
+  font-family: $secondary-font-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $brand-color;
+}
+
 .about__icone {
-  width: 4.5px;
-  height: 8px;
+  margin-left: 13px;
+  width: 8px;
+  height: 10px;
   stroke: $brand-color;
   fill: none;
 }
