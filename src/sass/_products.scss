@@ -15,20 +15,17 @@
   display: block;
   font-family: $main-font-family;
   font-size: 18px;
-  line-height: 1.16;
-  padding-bottom: 15px;
-  // margin: 0;
+  // line-height: 1.16;
+  padding-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
   color: $text-color;
 }
 
 .products__title--base {
-  display: block;
-  padding-top: 15px;
   font-family: $main-font-family;
   font-size: 34px;
-  line-height: 1.14;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -73,11 +70,13 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $background_reviews-color;
+    background-color: $background_main-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover > svg {
-    fill: $text-color;
+    fill: $discription_text-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:active {
@@ -95,10 +94,9 @@
 
   &:hover, &:focus {
     fill: $text-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
-
 
 .products__img {
   margin: 0 auto;
@@ -117,10 +115,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   max-width: 280px;
-  height: 100%;
-  max-height: 485px;
   background: $background_header-color;
   border-radius: 24px;
 }
@@ -131,7 +126,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   max-width: 280px;
   background: $cafe-color;
   border-radius: 24px;
@@ -143,29 +137,10 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 100%;
   max-width: 280px;
   background: $foodtruck-color;
   border-radius: 24px;
 }
 
- .strawberry {
-  position: relative;
-  max-width: 280px;
-  background: $background_header-color;
-  border-radius: 24px;
- }
-
- .chocolate {
-   position: relative;
-  background: $cafe-color;
-  border-radius: 24px;
- }
-
- .kiwi {
-   position: relative;
-  background: $foodtruck-color;
-  border-radius: 24px;
- }
 
 
