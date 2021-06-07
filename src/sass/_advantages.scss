@@ -1,5 +1,6 @@
 .information {
   padding-top: 39px;
+  background-color: #fff5f6;
 
   @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     padding-top: 66px;
@@ -8,6 +9,13 @@
   @media screen and (min-width: 1200px) {
     padding-top: 39px;
   }
+}
+
+.information__title {
+  display: none;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .advantages {
@@ -63,6 +71,7 @@
 .advantages__text {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-right: 70px;
 
   color: $main_text-color;
   font-family: $secondary-font-family;
