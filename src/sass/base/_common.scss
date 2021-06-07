@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -29,11 +30,14 @@ ul {
 
 .container {
   min-width: 320px;
-
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+body.overflow-is-hidden {
+  overflow: hidden;
 }
 
 h1,

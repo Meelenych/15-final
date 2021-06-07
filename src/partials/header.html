@@ -3,53 +3,53 @@
         <div class="hero__background"></div>
         <div class="hero__background-image"></div>
 
-            <div class="header__logo--geometry">
-                <a href="" class="header__logo">
-                <picture>
-                    <source srcset="./images/mobile/logo_img1_mobile.png 1x, ./images/mobile/logo_img1@2x_mobile.png 2x" media="(max-width: 767px)">
-                    <source srcset="./images/tablet/logo_img1_tablet.png 1x, ./images/tablet/logo_img1@2x_tablet.png 2x" media="(min-width: 768px)">
-                    <source srcset="./images/desktop/logo_img1_desktop.png 1x, ./images/desktop/logo_img1@2x_desktop.png 2x" media="(min-width: 1280px)">
-                    <img src="./images/tablet/logo_img1_tablet.png" alt="логотип">
-                </picture>
-                </a>
-
-                <button type="button" class="header__mobile-menu__button">
-                    <svg class="header__mobile-menu__button__icon">
-                        <use href="./images/symbol-defs.svg#icon-github"></use>
-                    </svg>
-                </button>
-            </div>
+        <div class="header--geometry">
+            <a href="./index.html" class="logo__link">
+            <picture>
+                <source srcset="./images/desktop/logo_img1_desktop.png 1x, ./images/desktop/logo_img1@2x_desktop.png 2x" 
+                media="(min-width: 1280px)" type="image/png">
+                <source srcset="./images/tablet/logo_img1_tablet.png 1x, ./images/tablet/logo_img1@2x_tablet.png 2x" 
+                media="(min-width: 768px)" type="image/png">
+                <source srcset="./images/mobile/logo_img1_mobile.png 1x, ./images/mobile/logo_img1@2x_mobile.png 2x" 
+                media="(max-width: 767px)" type="image/png">
+               <img src="./images/tablet/logo_img1_tablet.png" alt="логотип">
+            </picture>
+            </a>
+            
+            <button type="button" class="mobile-menu__button" aria-expanded="false" data-menu-button>
+                <svg class="mobile-menu__icon">
+                    <use class="menu__icon-open" href="./images/symbol-defs.svg#burger"></use>
+                    <use class="menu__icon-close" href="./images/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+        </div>
             
          
 
-                <div class="hero--geometry">
-                    <div class="hero">
-                        <h1 class="visually-hidden">Ice cream main information</h1>
-                        <p class="hero__text-white">ice cream</p>
-                        <p class="hero__text-white">made with</p>
-                        <p class="hero__text-red">passion</p>
-                    </div>
-                </div>
+       
+        <div class="hero">
+            <h1 class="hero__text-white">ice cream<br>made with<br><span class="hero__text-red">passion</span></h1>
+               
+        </div>
+   
+    
+        <ul class="hero__list">
+            <li class="hero__item"><a href="" class="hero__link-1">Products</a></li>
+            <li><a href="#about" class="hero__link-2">How it’s made?</a></li>
+        </ul>
+
+<!-- мобильное меню -->
+        <div class="mobile-menu" data-menu>
             
-                <ul class="hero__list">
-                    <li class="hero__item"><a href="" class="hero__link-1">Products</a></li>
-                    <li><a href="" class="hero__link-2">How it’s made?</a></li>
-                </ul>
-     
-
-        <div class="mobile-menu">
-            <button type="button" class="mobile-menu__btn-close">
-                <svg class="mobile-menu__btn-close__icon">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
+            <button type="button" class="mobile-menu__btn-buy">Buy now
+                <svg class="btn-buy__icon"><use href="./images/symbol-defs.svg#icon-arrow"></use></svg>
             </button>
-
-            <button type="button" class="mobile-menu__btn-buy">Buy now</button>
+            
             <nav>
                 <ul class="nav__list">
-                    <li><a href="" class="nav__item">Home</a></li>
+                    <li><a href="./index.html" class="nav__item">Home</a></li>
                     <li><a href="" class="nav__item">About us</a></li>
-                    <li><a href="" class="nav__item">How it’s made?</a></li>
+                    <li><a href="#about" class="nav__item">How it’s made?</a></li>
                     <li><a href="" class="nav__item">Our products</a></li>
                     <li><a href="" class="nav__item">Contact</a></li>
                 </ul>

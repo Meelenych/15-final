@@ -2,35 +2,71 @@
   background-color: $background_header-color;
   padding-top: 6px;
   min-width: 320px;
-  border: solid 1px green;
+  max-width: 480px;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
 }
 
-.header__logo {
-  @extend .link;
-  width: 200px;
-  border: solid 1px green;
-}
-
-.header__mobile-menu__button {
-  width: 40px;
-  height: 30px;
-  cursor: pointer;
-  border: solid 1px green;
+.header--geometry {
   background-color: $background_header-color;
-}
-
-.header__logo--geometry {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px green;
 }
 
-.header__mobile-menu__button__icon {
+.logo__link {
+  @extend .link;
+  width: 200px;
+}
+
+.mobile-menu {
+  background-color: $mobile-menu-color;
+  width: 100%;
+  height: 120vh;
+  position: fixed;
+  z-index: 900;
+  transform: translate(500px, -490px);
+
+  transition: transform 500ms;
+
+  &.is-open {
+    transform: translate(-15px, -500px);
+  }
+}
+
+.mobile-menu__button {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  z-index: 999;
+
+  &.is-open .menu__icon-open {
+    display: none;
+  }
+
+  &.is-open .menu__icon-close {
+    display: block;
+  }
+}
+
+.mobile-menu__icon {
   width: 20px;
   height: 12px;
   fill: $brand-color;
-  border: solid 1px green;
+}
+
+.menu__icon-close {
+  display: none;
+}
+
+.hero {
+  padding-top: 137px;
+  margin-bottom: 19px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero__background {
@@ -39,8 +75,7 @@
   height: 344px;
   border-radius: 50%;
   position: absolute;
-  left: 36px;
-  top: 83px;
+  transform: translate(36px, 83px);
 }
 
 .hero__background-image {
@@ -49,8 +84,7 @@
   width: 171px;
   height: 410px;
   background-repeat: no-repeat;
-  left: 117px;
-  top: 92px;
+  transform: translate(117px, 75px);
 }
 
 .visually-hidden {
@@ -64,14 +98,6 @@
   overflow: hidden;
 }
 
-.hero--geometry {
-  padding-top: 137px;
-  margin-bottom: 19px;
-  position: relative;
-  overflow: hidden;
-  border: solid 1px green;
-}
-
 .hero__text-white {
   font-family: $main-font-family;
   font-size: 26px;
@@ -80,7 +106,6 @@
   text-transform: uppercase;
   color: $background-color;
   margin: 0;
-  border: solid 1px green;
 }
 .hero__text-red {
   font-size: 47px;
@@ -90,7 +115,6 @@
   text-transform: uppercase;
   color: $brand-color;
   margin: 0;
-  border: solid 1px green;
 }
 
 .hero__list {
@@ -99,7 +123,6 @@
   padding: 0;
   padding-bottom: 140px;
   position: relative;
-  border: solid 1px green;
 }
 
 .hero__item {
@@ -145,44 +168,41 @@
   }
 }
 
-.mobile-menu {
-  background-color: $mobile-menu-color;
-}
-
-.mobile-menu__btn-close {
-  width: 40px;
-  height: 30px;
-  cursor: pointer;
-  background: $mobile-menu-color;
-  border: solid 1px green;
-}
-
-.mobile-menu__btn-close__icon {
-  width: 14px;
-  height: 14px;
-  fill: $background-color;
-  border: solid 1px green;
-}
-
 .mobile-menu__btn-buy {
   width: 209px;
   height: 44px;
   border-radius: 22px;
   background: #ffffff;
   border: none;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
 
   font-family: $secondary-font-family;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.31;
   color: $brand-color;
+  padding-left: 50px;
 
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
 
   &:hover,
   &:focus {
     background: $background-color-hover;
   }
+}
+
+.btn-buy__icon {
+  display: block;
+  width: 8px;
+  height: 10px;
+  margin-left: 20px;
+  fill: none;
+  stroke: $brand-color;
 }
 
 .nav__list {
@@ -196,6 +216,11 @@
   font-size: 14px;
   line-height: 1.29;
   color: $background-color;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 21px;
 
   &:hover,
   &:focus {
