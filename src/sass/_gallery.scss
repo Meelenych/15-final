@@ -1,18 +1,19 @@
 .gallery {
-  max-width: 364px;
-  max-height: 122px;
+  min-width: 364px;
+  min-height: 122px;
 
+  margin-top: 97px;
+  margin-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 97px;
-  padding-bottom: 80px;
+
   background-image: url('../images/mobile/gallery_img1_mobile.png');
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  // background-size: cover;
 
-  left: -18px;
+  // left: -18px;
 }
 
 // @media screen and (min-resolution: 2dppx) {
