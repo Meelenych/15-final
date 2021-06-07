@@ -39,7 +39,6 @@
   font-family: $main-font-family;
   font-size: 20px;
   line-height: 1.15;
-  margin: 0;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -97,8 +96,6 @@
     fill: $text-color;
   }
 }
-
-
 
 .products__img {
   margin: 0 auto;
@@ -168,8 +165,4 @@
   border-radius: 24px;
  }
 
-// .container {
-//   width: 100%;
-//   padding: 0 15px;
-// }
 
