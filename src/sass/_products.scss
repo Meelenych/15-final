@@ -7,7 +7,7 @@
 
 .products {
   background-color: $background-color;
-  padding: 45px 0;
+  padding: 100px 0;
 }
 
 .products__title--main {
@@ -38,8 +38,6 @@
   font-family: $main-font-family;
   font-size: 20px;
   line-height: 1.15;
-  margin: 0;
-  // text-align: center;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -71,7 +69,8 @@
   height: 40px;
   border: none;
   border-radius: 50%;
-  background: url(../images/mobile/arrow_right1_mobile.png);
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .products__img {
@@ -153,8 +152,4 @@
   border-radius: 24px;
  }
 
-// .container {
-//   width: 100%;
-//   padding: 0 15px;
-// }
 
