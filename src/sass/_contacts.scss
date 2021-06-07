@@ -246,6 +246,11 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
+    &:focus,
+    &:hover {
+      color: $text-color;
+      font-size: 17px;
+    }
   }
 }
 .contacts__buttons {
@@ -267,9 +272,18 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 
+  &:hover,
+  :focus {
+    background: $background-color-hover;
+  }
   &--current {
     background: $brand-color;
     color: #ffffff;
+    &:hover,
+    &:focus {
+      background: $brand-color;
+      color: #ffffff;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -299,19 +313,10 @@
       margin-right: 15px;
     }
   }
-
-  &:hover,
-  :focus {
-    background: $brand-color;
-    color: #ffffff;
-  }
-  &:hover .contacts__svg {
-    stroke: #ffffff;
-  }
 }
 
 .contacts__svg {
-  width: 5px;
+  width: 8px;
   height: 8px;
   fill: none;
   stroke: $brand-color;
