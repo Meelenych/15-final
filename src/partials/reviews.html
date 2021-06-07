@@ -58,7 +58,23 @@
 
             </div>
 
-            <button class="read-more" type="button">
+            <div data-modal class="backdrop is-hidden">            
+                <article class="review__article">
+                    <div class="article-content">
+
+                        <button data-modal-close class="modal-close-btn">
+                            <svg class="close-svg" width="14" height="14">
+                              <use href="./images/symbol-defs.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                          <h3 class="review-title">Emily's review</h3>  
+                        <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque quos quae, optio, ullam magnam maxime doloremque dignissimos iusto cumque veritatis voluptas aspernatur repellat omnis sunt dicta ea a sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde magni porro iste soluta saepe id aliquam earum maxime quas voluptate, eaque velit quam quis! Ipsam sint itaque fugiat consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed autem ullam, labore a nemo nobis fugit dolor! Error possimus hic perferendis ipsa atque temporibus maxime illo nam reiciendis laboriosam earum voluptate vel esse soluta laudantium quisquam, sit autem corporis voluptatibus incidunt molestias. Blanditiis quasi quas magnam iste velit? Delectus, quo!</p> 
+                        <p class="review__names">Emily, Los Angeles</p>
+                    </div>  
+                </article>
+            </div>  
+
+            <button class="read-more" type="button" data-modal-open>
                 <svg  class="review__dot" width="4px" height="4px">
                     <use href="./images/symbol-defs.svg#icon-ellipse"></use>
                 </svg>
@@ -70,7 +86,7 @@
                 </svg>
             </button>
 
-            <p>Emily, Los Angeles</p>
+            <p class="review__names">Emily, Los Angeles</p>
         </div>  
         <!-- Card 2. Gina -->
         <div class="review__card visually-hidden">
@@ -142,7 +158,7 @@
                 </svg>
             </button>
 
-            <p>Gina, Chicago</p>
+            <p class="review__names">Gina, Chicago</p>
         </div>          
 
         <!-- Card 3. Mia -->
@@ -214,13 +230,13 @@
                 </svg>
             </button>
 
-            <p>Mia, New York</p>
+            <p class="review__names">Mia, New York</p>
         </div>          
 
 
         <ul class="review__carousel">
             <li>
-                <button class="review__carousel--button" type="button">
+                <button class="review__carousel--button current" type="button">
                     <svg width="12px" height="12px">
                         <use href="./images/symbol-defs.svg#icon-home"></use>
                     </svg>

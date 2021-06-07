@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -45,6 +46,10 @@ ul {
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
+}
+
+body.overflow-is-hidden {
+  overflow: hidden;
 }
 
 h1,
