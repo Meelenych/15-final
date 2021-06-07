@@ -38,14 +38,27 @@
   width: 40px;
   height: 30px;
   cursor: pointer;
-  background-color: $background_header-color;
+  background-color: transparent;
   border: none;
+  z-index: 999;
+
+  &.is-open .menu__icon-open {
+    display: none;
+  }
+
+  &.is-open .menu__icon-close {
+    display: block;
+  }
 }
 
 .mobile-menu__icon {
   width: 20px;
   height: 12px;
   fill: $brand-color;
+}
+
+.menu__icon-close {
+  display: none;
 }
 
 .hero {
@@ -182,6 +195,7 @@
   background: #ffffff;
   border: none;
   margin: auto;
+  margin-top: 60px;
   margin-bottom: 20px;
 
   font-family: $secondary-font-family;
