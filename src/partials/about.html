@@ -1,9 +1,35 @@
-<p>
-  Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-  eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-</p>
-<p>
-  Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-  imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
-  massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
-</p>
+<section class="about section" id="about">
+  <div class="container">
+    <label class="about__label">tradition and love</label>
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="about__description">
+      <picture>
+        <source
+          srcset="
+            ./images/mobile/about_img1_mobile.png    1x,
+            ./images/mobile/about_img1@2x_mobile.png 2x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img src="./images/mobile/about_img1_mobile.png" width="280" alt="корова и молоко" />
+      </picture>
+      <p class="about__text about__text--black">
+        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+      </p>
+      <p class="about__text about__text--gray">
+        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus. Cras massa nibh, tincidunt.
+      </p>
+      <p class="about__text about__text--gray">Aliquam erat volutpat. Aenean accumsan.</p>
+      <button class="about__button" type="button">
+        Read more
+        <svg class="about__icone">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>

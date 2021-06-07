@@ -2,7 +2,7 @@
   padding-top: 85px;
   padding-bottom: 110px;
 
-  background: linear-gradient(0deg, #fff5f6 0%, #fff5f6 71.42%, #feffff 71.43%, #ffffff 104.18%);
+  background-image: linear-gradient(#ffffff 10%, #fff5f6 10%, #fff5f6 100%);
 }
 
 .contacts__item {
@@ -18,10 +18,11 @@
     margin-bottom: 20px;
   }
 }
-// .contacts__list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .contacts__title {
   font-family: DM Sans;
@@ -118,12 +119,15 @@
   line-height: 1.5;
 
   color: $discription_text-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+
+  &:hover,
+  :focus {
+    color: $text-color;
+  }
 }
 .contacts__buttons {
   margin-top: 54px;
-  // margin-right: auto;
-  // margin-left: auto;
-
   text-align: center;
 }
 .contacts__btn {
@@ -139,18 +143,33 @@
   line-height: 21px;
   padding: 0;
   color: $brand-color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
   &--current {
     background: $brand-color;
     color: #ffffff;
   }
+  &:hover,
+  :focus {
+    background: $brand-color;
+    color: #ffffff;
+  }
+  &:hover .contacts__svg {
+    stroke: #ffffff;
+  }
 }
+
 .contacts__svg {
-  width: 3.61px;
+  width: 5px;
   height: 8px;
-  fill: #ffffff;
+  fill: none;
+  stroke: $brand-color;
 
   &--current {
-    fill: $brand-color;
+    stroke: #ffffff;
   }
 }
