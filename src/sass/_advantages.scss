@@ -47,71 +47,71 @@
   }
 }
 
-// .advantages__one::before {
-//   display: inline-block;
-//   content: '';
-//   width: 33px;
-//   height: 50px;
-//   margin-bottom: 16px;
-//   background-image: url(../images/mobile/advantages_img1_mobile.png);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-color: $background_main-color;
+.advantages__one::before {
+  display: inline-block;
+  content: '';
+  width: 33px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/mobile/advantages_img1_mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $background_main-color;
 
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .advantages__one {
-//       background-image: url(../images/mobile/advantages_img1@2x_mobile.png);
-//     }
-//   }
-// }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages__one {
+      background-image: url(../images/mobile/advantages_img1@2x_mobile.png);
+    }
+  }
+}
 
-// .advantages__two::before {
-//   display: inline-block;
-//   content: '';
-//   width: 50px;
-//   height: 50px;
-//   margin-bottom: 16px;
-//   background-image: url(../images/mobile/advantages_img2_mobile.png);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-color: $background_main-color;
+.advantages__two::before {
+  display: inline-block;
+  content: '';
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/mobile/advantages_img2_mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $background_main-color;
 
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .advantages__two {
-//       background-image: url(../images/mobile/advantages_img2@2x_mobile.png);
-//     }
-//   }
-// }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages__two {
+      background-image: url(../images/mobile/advantages_img2@2x_mobile.png);
+    }
+  }
+}
 
-// .advantages__three::before {
-//   display: inline-block;
-//   content: '';
-//   width: 44px;
-//   height: 50px;
-//   margin-bottom: 16px;
-//   background-image: url(../images/mobile/advantages_img3_mobile.png);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-color: $background_main-color;
+.advantages__three::before {
+  display: inline-block;
+  content: '';
+  width: 44px;
+  height: 50px;
+  margin-bottom: 16px;
+  background-image: url(../images/mobile/advantages_img3_mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $background_main-color;
 
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .advantages__three {
-//       background-image: url(../images/mobile/advantages_img3@2x_mobile.png);
-//     }
-//   }
-// }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages__three {
+      background-image: url(../images/mobile/advantages_img3@2x_mobile.png);
+    }
+  }
+}
 
 .advantages__image {
   margin-bottom: 16px;
