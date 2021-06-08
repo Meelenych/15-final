@@ -1,23 +1,18 @@
 .review {
     padding-top: 80px;
-
 }
 
 .review__card {
-  
   min-height: 400px;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   position: relative;
-  
-  
-
   fill: #E1E1E1;
-
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: $reviews-color;
 }
 
 .review__picture {
@@ -30,96 +25,43 @@
     top: 170px;
     left: 50%;
     transform: translate(-140%, 0%);
-    
-
-}
-
-.review__line-1 {
-    fill: #E1E1E1;
-    
-    position: absolute;
-    z-index: 1;
-    top: 215px;
-}
-
-.review__line-2 {
-    fill: #E1E1E1;
-    
-    position: absolute;
-    z-index: 1;
-    top: 245px;
-}
-
-.review__line-3 {
-    fill: #E1E1E1;
-    
-    position: absolute;
-    z-index: 1;
-    top: 275px;
-}
-
-.review__line-4 {
-    fill: #E1E1E1;
-    
-    position: absolute;
-    z-index: 1;
-    top: 305px;
-}
-
-.review__line-5 {
-    fill: #E1E1E1;
-    
-    position: absolute;
-    z-index: 1;
-    top: 335px;
-}
-
-.review__line-6 {
-    fill: #E1E1E1;
-    
-    position: absolute;
-    z-index: 1;
-    top: 365px;
-}
-
-.review__line-7 {
-    fill: #E1E1E1;
-    
-    position: absolute;
-    z-index: 1;
-    top: 395px;
-}
-
-.review__line-8 {
-    fill: #E1E1E1;
-    
-    position: absolute;
-    z-index: 1;
-    top: 425px;
 }
 
 .review__card--textblock {
-    display: flex;
-    background-color: $reviews-color;
-    width: 280px;
+    display: flex;    
     height: 308px;
     justify-content: center;
-    align-items: top;
     padding-top: 43px;
-    margin-bottom: 10px;
+    width: 180px;
+   
+}
+
+.backlines {
+    width: 100%;
+    background: repeating-linear-gradient(
+        transparent,
+        transparent 28px,
+        #E1E1E1 30px,
+        #E1E1E1 30px
+    );
+    overflow: hidden;
+    height: 245px;
 }
 
 
 .review__text {
-position: relative;
-font-family: $secondary-font-family;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 2.55;
-z-index: 2;
-text-align: center;
-width: 157px;
+    position: relative;
+    font-family: $secondary-font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    z-index: 2;
+    text-align: center;
+    width: 157px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
 }
 
 .review__names {
@@ -127,7 +69,7 @@ width: 157px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;   
-    text-align: center;
+  
 }
 
 .read-more {
@@ -229,6 +171,14 @@ width: 157px;
 .review-title {
     font-family: $secondary-font-family;
     font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.review-date {
+    font-family: $secondary-font-family;
+    font-weight: 900;
+    color: $brand-color;
+    margin-bottom: 40px;
 }
 
 .article-text {
@@ -237,6 +187,17 @@ width: 157px;
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
+}
+
+.article-names {
+    font-family: $secondary-font-family;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;   
+    text-align: right;
+    color: $brand-color;
+    font-style: italic;
+    margin-top: 20px;
 }
 
 .close-svg {
