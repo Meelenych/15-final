@@ -125,12 +125,19 @@
   @extend .list;
   display: flex;
   padding: 0;
+  margin: 0;
   // padding-bottom: 140px;
   position: relative;
 }
 
 .hero__item {
   padding-right: 8px;
+}
+
+.hero__btn {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .hero__link-1 {
