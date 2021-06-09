@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/carousel.js"],"names":["$","slick"],"mappings":";AAAAA,EAAE,gBAAgBC","file":"carousel.7f04ea34.js","sourceRoot":"../src","sourcesContent":["$('.single-item').slick();"]}
