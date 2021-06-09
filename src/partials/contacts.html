@@ -1,6 +1,7 @@
 <section class="contacts__section" id="contact">
-  <div class="container">
+  <div class="container column">
     <h2 class="visually-hidden">Our Locations</h2>
+
     <ul class="contacts__list">
       <li class="contacts__item">
         <p class="contacts__title cafe">CAFE</p>
@@ -54,6 +55,40 @@
         </div>
       </li>
     </ul>
+    <div class="map">
+      <div class="map-item" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+        <script>
+          (function () {
+            var setting = {
+              height: 540,
+              width: 723,
+              zoom: 9,
+              queryString: 'Los Angeles, Калифорния, США',
+              place_id: 'ChIJE9on3F3HwoAR9AhGJW_fL-I',
+              satellite: false,
+              centerCoord: [33.96413565619264, -118.57791306321168],
+              cid: '0xe22fdf6f254608f4',
+              lang: 'ru',
+              cityUrl: '/us/ca/malibu-8192',
+              cityAnchorText: 'Карта [CITY1], Калифорния, США',
+              id: 'map-9cd199b9cc5410cd3b1ad21cab2e54d3',
+              embed_id: '520766',
+            };
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=520766';
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting);
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+          })();
+        </script>
+        <a href="https://1map.com/ru/map-embed">1 Map</a>
+      </div>
+    </div>
     <div class="contacts__buttons">
       <button class="contacts__btn contacts__btn--current">
         <span class="contacts__btn-label">Our Locations</span>
