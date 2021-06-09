@@ -12,6 +12,11 @@
   text-align: center;
   text-transform: uppercase;
   color: $text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 
 .about__title {
@@ -23,11 +28,35 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $brand-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.about__flexbox {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: -17px;
+  }
+}
+
+.content-box {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 17px) / 2);
+    margin-left: 17px;
+    justify-content: space-between;
+  }
 }
 
 .about__content {
   padding-left: 30px;
   padding-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .about__text {
@@ -35,6 +64,11 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
 
   &--black {
     padding: 40px 0;
@@ -111,7 +145,6 @@
   width: 100%;
   height: 100%;
   stroke: $brand-color;
-
 }
 
 .about-modal__content {
