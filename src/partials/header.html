@@ -16,13 +16,33 @@
             </picture>
             </a>
             
-            <button type="button" class="mobile-menu__button" aria-expanded="false" data-menu-button>
-                <svg class="mobile-menu__icon">
+            <div class="header--tablet">
+            <button type="button" class="mobile__button" aria-expanded="false" data-menu-button>
+                <svg class="mobile__icon">
                     <use class="menu__icon-open" href="./images/symbol-defs.svg#burger"></use>
                     <use class="menu__icon-close" href="./images/symbol-defs.svg#close"></use>
                 </svg>
+            </button> 
+
+            <button type="button" class="header__btn-buy">Buy now
+                <svg class="header__buy-icon">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                </svg>
             </button>
+            </div>
+        
         </div>
+
+        
+        <div class="hero__numbers">
+            <p class="numbers">16</p>
+            <p class="figures">cafes</p>
+            <p class="numbers">23</p>
+            <p class="figures">food trucks</p>
+        </div>
+
+        <div class="numbers__background"></div>
+        <div class="figures__background"></div>
             
 
         <div class="hero">
@@ -55,9 +75,16 @@
                             </svg>
                     </button>
                 </div>
-                
 
             </div>
+
+            <picture class="tasty-pic">
+                <source srcset="./images/desktop/header_img2_desktop.png 1x, ./images/desktop/header_img2@2x_desktop.png 2x"
+                    media="(min-width: 1200px)" type="image/png">
+                <source srcset="./images/tablet/header_img2_tablet.png 1x, ./images/tablet/header_img2@2x_tablet.png 2x"
+                    media="(min-width: 768px)" type="image/png">
+                <img src="./images/tablet/header_img2_tablet.png" alt="логотип">
+            </picture>
 
                 
 
