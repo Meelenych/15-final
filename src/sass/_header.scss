@@ -90,7 +90,7 @@
   transform: translate(36px, 83px);
 
   @media screen and (min-width: 768px) {
-    transform: translate(260px, 0px);
+    transform: translate(266px, 5px);
   }
 }
 
@@ -207,9 +207,6 @@
   }
 }
 
-.eco-img {
-}
-
 .eco-text {
   font-family: $secondary-font-family;
   font-size: 8px;
@@ -298,6 +295,17 @@
   position: absolute;
   left: 716px;
   top: 158px;
+}
+
+.tasty-pic {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    left: 532px;
+    top: 180px;
+  }
 }
 
 // Мобильное меню
