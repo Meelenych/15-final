@@ -324,6 +324,15 @@
     transform: translate(-20px, -500px);
     opacity: 1;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 254px;
+    transform: translate(950px, -585px);
+    &.is-open {
+      transform: translate(415px, -585px);
+      opacity: 1;
+    }
+  }
 }
 
 .mobile__button {
@@ -378,11 +387,11 @@
   &:hover,
   &:focus {
     background: $background-color-hover;
+  }
 
-    @media screen and (min-width: 768px) {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+  @media screen and (min-width: 768px) {
+    width: 186px;
+    padding-right: 15px;
   }
 }
 
