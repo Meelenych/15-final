@@ -312,8 +312,12 @@
 
 .mobile-menu {
   @extend .container;
+  padding-left: 21px;
   background-color: $mobile-menu-color;
   opacity: 0;
+  // width: 100%;
+  min-width: 320px;
+  // max-width: 480px;
   width: 100%;
   height: 110vh;
   position: fixed;
@@ -327,6 +331,7 @@
 
   @media screen and (min-width: 768px) {
     width: 254px;
+    padding-left: 24px;
     transform: translate(950px, -585px);
     &.is-open {
       transform: translate(415px, -585px);
@@ -342,6 +347,7 @@
   background-color: transparent;
   border: none;
   z-index: 999;
+  transition: transform 500ms;
 
   &.is-open .menu__icon-open {
     display: none;
@@ -349,6 +355,12 @@
 
   &.is-open .menu__icon-close {
     display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    &.is-open {
+      transform: translate(200px, -30px);
+    }
   }
 }
 
