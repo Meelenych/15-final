@@ -57,8 +57,9 @@
     height: 308px;
     justify-content: center;
     padding-top: 43px;
-    width: 180px;
+    width: 280px;
     background-color: $reviews-color;
+
 
     @media screen and (min-width: 768px) {
         min-height: 155px;
@@ -74,7 +75,6 @@
 }
 
 .backlines {
-    width: 100%;
     background: repeating-linear-gradient(
         transparent,
         transparent 28px,
@@ -83,6 +83,7 @@
     );
     overflow: hidden;
     height: 245px;
+    max-width: 180px;
 
     @media screen and (min-width: 768px) {
         max-height: 100px;
@@ -237,8 +238,7 @@
     transform: translate(-50%, -50%);
     max-width: 700px;
     max-height: 100vh;
-    overflow-y: scroll;
-
+    overflow-y: auto;
 }
 
 // .review__article {
