@@ -43,12 +43,18 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-right: 10px;
+  // }
 }
 
 .header__btn-buy {
   display: none;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -68,7 +74,7 @@
     cursor: pointer;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 80;
+    margin-left: 20px;
   }
 }
 
@@ -93,6 +99,7 @@
 
 .header__nav {
   display: none;
+  z-index: 5;
 
   @media screen and (min-width: 1200px) {
     display: inline-block;
@@ -141,7 +148,6 @@
   }
   @media screen and (min-width: 1200px) {
     padding-top: 84px;
-    // padding-bottom: 217px;
   }
 }
 
@@ -152,15 +158,25 @@
   border-radius: 50%;
   position: absolute;
   transform: translate(15px, 20px);
+  z-index: 0;
 
   @media screen and (min-width: 768px) {
-    transform: translate(265px, -45px);
+    transform: translate(275px, -50px);
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: translate(350px, -35px);
+    width: 538px;
+    height: 538px;
   }
 }
 
 .hero__background-image {
   background: url(../images/mobile/header_img1_mobile.png);
   position: absolute;
+  // z-index: 10;
   width: 171px;
   height: 410px;
   background-repeat: no-repeat;
@@ -170,6 +186,13 @@
     background: url(../images/tablet/header_img1_tablet.png);
     background-repeat: no-repeat;
     transform: translate(350px, -15px);
+  }
+  @media screen and (min-width: 1200px) {
+    background: url(../images/desktop/header_img1_desktop.png);
+    background-repeat: no-repeat;
+    width: 236px;
+    height: 557px;
+    transform: translate(440px, 20px);
   }
 }
 
@@ -262,6 +285,12 @@
   &:focus {
     background: $brand-color-hover;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 104px;
+    height: 40px;
+    font-size: 14px;
+  }
 }
 .hero__link-2 {
   @extend .link;
@@ -280,6 +309,12 @@
   &:hover,
   &:focus {
     background: $background-color-hover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
   }
 }
 
@@ -323,6 +358,7 @@
   @media screen and (min-width: 1200px) {
     width: 26px;
     height: 26px;
+    margin-top: 20px;
   }
 }
 
@@ -340,6 +376,7 @@
 
 .hero__numbers {
   display: none;
+
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
@@ -347,6 +384,13 @@
     z-index: 100;
     margin-top: 14px;
     width: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 1010px;
+    z-index: 100;
+    margin-top: 78px;
+    width: 75px;
   }
 }
 
@@ -359,6 +403,10 @@
   color: $brand-color;
 
   text-align: right;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
 }
 
 .numbers__background {
@@ -369,6 +417,14 @@
   position: absolute;
   left: 716px;
   top: 99px;
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/ellipse_desktop.png);
+    width: 30px;
+    height: 30px;
+    left: 1073px;
+    top: 160px;
+  }
 }
 
 .figures {
@@ -378,8 +434,11 @@
   line-height: 1.25;
   color: $background-color;
   text-transform: none;
-
   text-align: right;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .figures__background {
@@ -390,6 +449,14 @@
   position: absolute;
   left: 716px;
   top: 158px;
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/ellipse_desktop.png);
+    width: 30px;
+    height: 30px;
+    left: 1073px;
+    top: 245px;
+  }
 }
 
 .tasty-pic {
@@ -400,6 +467,11 @@
     position: absolute;
     left: 532px;
     top: 188px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 680px;
+    top: 350px;
   }
 }
 
@@ -457,7 +529,7 @@
 
   @media screen and (min-width: 768px) {
     &.is-open {
-      transform: translate(200px, -30px);
+      transform: translate(210px, -30px);
     }
 
     @media screen and (min-width: 1200px) {
