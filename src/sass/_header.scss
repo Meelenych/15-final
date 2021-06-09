@@ -11,6 +11,7 @@
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-top: 37px;
+    height: 399px;
   }
 }
 
@@ -36,15 +37,12 @@
     display: flex;
     align-items: center;
     margin-left: 30px;
-    padding-left: 50px;
-    width: 209px;
+    padding-left: 37px;
+    width: 160px;
     height: 44px;
     border-radius: 22px;
-
     background: #ffffff;
     border: none;
-    padding-left: 50px;
-
     font-family: $secondary-font-family;
     font-weight: bold;
     font-size: 16px;
@@ -52,6 +50,16 @@
     color: $brand-color;
     cursor: pointer;
   }
+}
+
+.header__buy-icon {
+  display: block;
+  width: 8px;
+  height: 10px;
+  margin-left: 12px;
+  margin-right: 17px;
+  fill: none;
+  stroke: $brand-color;
 }
 
 .logo__link {
@@ -80,6 +88,10 @@
   border-radius: 50%;
   position: absolute;
   transform: translate(36px, 83px);
+
+  @media screen and (min-width: 768px) {
+    transform: translate(260px, 0px);
+  }
 }
 
 .hero__background-image {
@@ -89,6 +101,12 @@
   height: 410px;
   background-repeat: no-repeat;
   transform: translate(117px, 75px);
+
+  @media screen and (min-width: 768px) {
+    background: url(../images/tablet/header_img1_tablet.png);
+    background-repeat: no-repeat;
+    transform: translate(350px, 30px);
+  }
 }
 
 .hero__text-white {
@@ -249,7 +267,6 @@
   color: $brand-color;
 
   text-align: right;
-  // padding-right: 50px;
 }
 
 .numbers__background {
@@ -263,7 +280,6 @@
 }
 
 .figures {
-  // padding-right: 28px;
   margin-bottom: 14px;
   font-family: $secondary-font-family;
   font-size: 10px;
@@ -342,6 +358,7 @@
   margin: auto;
   margin-top: 60px;
   margin-bottom: 20px;
+  padding-right: 20px;
 
   font-family: $secondary-font-family;
   font-weight: bold;
