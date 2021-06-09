@@ -1,37 +1,50 @@
 <header class="header">
-    <div class="container">
-        <div class="hero__background"></div>
-        <div class="hero__background-image"></div>
-
-        <div class="header--geometry">
-            <a href="./index.html" class="logo__link">
+    
+    <div class="header--geometry">
+        <a href="./index.html" class="logo__link">
             <picture>
-                <source srcset="./images/desktop/logo_img1_desktop.png 1x, ./images/desktop/logo_img1@2x_desktop.png 2x" 
-                media="(min-width: 1200px)" type="image/png">
-                <source srcset="./images/tablet/logo_img1_tablet.png 1x, ./images/tablet/logo_img1@2x_tablet.png 2x" 
-                media="(min-width: 768px)" type="image/png">
-                <source srcset="./images/mobile/logo_img1_mobile.png 1x, ./images/mobile/logo_img1@2x_mobile.png 2x" 
-                media="(max-width: 767px)" type="image/png">
-               <img src="./images/tablet/logo_img1_tablet.png" alt="логотип">
+                <source srcset="./images/desktop/logo_img1_desktop.png 1x, ./images/desktop/logo_img1@2x_desktop.png 2x"
+                    media="(min-width: 1200px)" type="image/png">
+                <source srcset="./images/tablet/logo_img1_tablet.png 1x, ./images/tablet/logo_img1@2x_tablet.png 2x"
+                    media="(min-width: 768px)" type="image/png">
+                <source srcset="./images/mobile/logo_img1_mobile.png 1x, ./images/mobile/logo_img1@2x_mobile.png 2x"
+                    media="(max-width: 767px)" type="image/png">
+                <img src="./images/tablet/logo_img1_tablet.png" alt="логотип">
             </picture>
-            </a>
-            
-            <div class="header--tablet">
+        </a>
+
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li><a href="./index.html" class="header__nav-item">Home</a></li>
+                <li><a href="#gallery" class="header__nav-item">About us</a></li>
+                <li><a href="#about" class="header__nav-item">How it’s made?</a></li>
+                <li><a href="#products" class="header__nav-item">Our products</a></li>
+                <li><a href="#contact" class="header__nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div class="header--tablet">
             <button type="button" class="mobile__button" aria-expanded="false" data-menu-button>
                 <svg class="mobile__icon">
                     <use class="menu__icon-open" href="./images/symbol-defs.svg#burger"></use>
                     <use class="menu__icon-close" href="./images/symbol-defs.svg#close"></use>
                 </svg>
-            </button> 
-
+            </button>
+    
             <button type="button" class="header__btn-buy">Buy now
                 <svg class="header__buy-icon">
                     <use href="./images/symbol-defs.svg#icon-arrow"></use>
                 </svg>
             </button>
-            </div>
-        
         </div>
+    
+    </div>
+    
+    <div class="container">
+        <div class="hero__background"></div>
+        <div class="hero__background-image"></div>
+
+        
 
         
         <div class="hero__numbers">
