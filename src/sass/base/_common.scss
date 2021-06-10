@@ -85,6 +85,10 @@ a {
 
 button {
   background: none;
+
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 .is-hidden {
