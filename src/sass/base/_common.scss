@@ -47,6 +47,8 @@ ul {
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }
 
@@ -83,6 +85,10 @@ a {
 
 button {
   background: none;
+
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 .is-hidden {
