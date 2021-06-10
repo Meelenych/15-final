@@ -32,7 +32,7 @@
                     </svg>
                 </button>
             
-                <button type="button" class="header__btn-buy" data-modal-opn4>Buy now
+                <button type="button" class="header__btn-buy">Buy now
                     <svg class="header__buy-icon">
                         <use href="./images/symbol-defs.svg#icon-arrow"></use>
                     </svg>
@@ -64,7 +64,7 @@
 
             
                 <ul class="hero__list">
-                    <li class="hero__item"><a href="#products" class="hero__link-1">Products</a></li>
+                    <li class="hero__item"><a href="#products" class="hero__link-1 button">Products</a></li>
                     <li><a href="#about" class="hero__link-2">How it’s made?</a></li>
                 </ul>
 
@@ -106,7 +106,7 @@
 <!--мобильное меню -->
             <div class="mobile-menu" data-menu>
 
-                <button type="button" class="mobile-menu__btn-buy">Buy now
+                <button type="button" class="mobile-menu__btn-buy" data-modal-opn4>Buy now
                     <svg class="btn-buy__icon"><use href="./images/symbol-defs.svg#icon-arrow"></use></svg>
                 </button>
 
@@ -122,5 +122,49 @@
             </div>
         </div>
     </div>
+
+    <!-- Бэкдроп и модальное окно -->
+    
+    <div class="backdrop is-hidden" data-modl4>
+        <div class="buy-modal">
+            <button class="buy-modal__close-btn" data-modal-cls4>
+                <svg class="buy-modal__close-icon">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+               </button>
+    
+            <h2 class="buy-modal__heading">Please left your telephone number and we will call you back</h2>
+    
+            <form>
+    
+                <div class="buy-modal__table">
+    
+                    <ul class="buy-list">
+    
+                        <li>
+                            <label class="buy-label">Name
+                                <input type="text" name="name" class="buy-input">
+                            
+                            </label>
+                        </li>
+    
+                        <li>
+                            <label class="buy-label">Telephone number
+                                <input type="tel" name="tel" class="buy-input">
+                             
+                            </label>
+                        </li>
+    
+                        <li>
+                            <button type="submit" class="buy-modal__send-button">Send</button>
+                        </li>
+    
+                    </ul>
+                </div>
+            </form>
+    
+        </div>
+
+        <!-- конец модального окна -->
 </header>
 

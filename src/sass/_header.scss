@@ -289,6 +289,10 @@
     background: $brand-color-hover;
   }
 
+  &:active {
+    transform: scale(0.9);
+  }
+
   @media screen and (min-width: 1200px) {
     width: 104px;
     height: 40px;
@@ -312,6 +316,10 @@
   &:hover,
   &:focus {
     background: $background-color-hover;
+  }
+
+  &:active {
+    transform: scale(0.9);
   }
 
   @media screen and (min-width: 1200px) {
@@ -618,33 +626,153 @@
 }
 
 // Модалка
-.buy-form {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border: solid 1px green;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
 }
 
-.hero__backdrop {
-  display: block;
-  width: 100px;
-  height: 100px;
-  border: solid 1px green;
-  // background-color: rgba(0, 0, 0, 0.2);
-  // transition-duration: 1500ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__modal {
-  width: 450px;
-  height: 609px;
+.buy-modal {
+  min-width: 320px;
+  max-width: 480px;
+  height: 100vh;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  background: $text-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   visibility: visible;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.buy-modal__close-btn {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: #fff;
+
+  &:hover,
+  &:target {
+    cursor: pointer;
+  }
+}
+
+.buy-modal__close-icon {
+  top: 50%;
+  right: 50%;
+  width: 11px;
+  height: 11px;
+  stroke: $brand-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .buy-modal__close-btn:hover &,
+  .buy-modal__close-btn:focus & {
+    stroke: $brand-color-hover;
+  }
+}
+
+.buy-modal__heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: $brand-color;
+  padding-top: 60px;
+  margin-bottom: 12px;
+  font-family: $main-font-family;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+.buy-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy-modal__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.buy-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $discription_text-color;
+  font-family: $secondary-font-family;
+}
+
+.buy-input {
+  position: relative;
+  display: flex;
+  width: 280px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: 10px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 450px;
+    height: 40px;
+  }
+}
+
+.buy-modal__send-button {
+  display: flex;
+  margin: auto;
+  margin-top: 15px;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: $brand-color;
+  background-color: $foodtruck-color;
+  font-family: $main-font-family;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 0;
 }
