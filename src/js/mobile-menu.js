@@ -10,6 +10,16 @@
   
       mobileMenuRef.classList.toggle("is-open")
 
-      document.body.classList.toggle("overflow-is-hidden")
+      // document.body.classList.toggle("overflow-is-hidden")
     })
-  })()
+  
+  const menuItmRef = document.querySelectorAll('[data-menu-item]');
+
+  function closeMenu() {
+    mobileMenuRef.classList.remove('is-open');
+    menuBtnRef.classList.toggle('is-open');
+    
+  }
+  Array.from(menuItmRef).forEach(item => item.addEventListener('click', closeMenu));
+  })();
+
