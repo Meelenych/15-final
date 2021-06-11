@@ -327,8 +327,23 @@
 }
 
 .map {
-  width: 100%;
+  display: none;
+  &-item {
+    border-radius: 10px;
+    border: 2px solid $mobile-menu-color;
+
+    height: 400px;
+  }
+}
+.mystyle {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+// .none {
+//   display: block;
+// }
+#contacts__list.none {
+  display: none;
 }
