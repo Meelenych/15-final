@@ -521,12 +521,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: calc 1/3vw;
-    transform: translate(950px, -430px);
-
     &.is-open {
-      transform: translate(630px, 0px);
-      max-width: 254px;
+      top: 0;
+      right: 0;
+      width: 254px;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -563,6 +561,8 @@
 
     &.is-open {
       transform: translate(170px, -30px);
+      top: 40px;
+      right: 200px;
     }
 
     @media screen and (min-width: 1200px) {
