@@ -311,6 +311,10 @@
     background: $brand-color-hover;
   }
 
+  &:active {
+    transform: scale(0.9);
+  }
+
   @media screen and (min-width: 1200px) {
     width: 104px;
     height: 40px;
@@ -335,6 +339,10 @@
   &:hover,
   &:focus {
     background: $background-color-hover;
+  }
+
+  &:active {
+    transform: scale(0.9);
   }
 
   @media screen and (min-width: 1200px) {
@@ -566,7 +574,6 @@
 
       top: 40px;
       right: 200px;
-
     }
 
     @media screen and (min-width: 1200px) {
